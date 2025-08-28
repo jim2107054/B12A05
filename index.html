@@ -8,28 +8,51 @@
   </head>
   <body>
     <!-- navbar -->
-    <nav class="flex justify-between items-center p-4 md:px-12 lg:px-16 bg-white">
+    <nav
+      class="flex justify-between items-center p-4 md:px-12 lg:px-16 bg-white"
+    >
       <div class="flex items-center space-x-4">
-        <img class="h-10 w-10" src="./assets/logo.png" alt="Logo" />
-        <h1 class="text-lg font-bold leading-tight text-green-900 gap-0">Emergency <br /> Service</h1>
+        <img class="h-8 w-8 md:h-10 md:w-10" src="./assets/logo.png" alt="Logo" />
+        <h1 class="text-sm md:text-lg font-bold leading-tight text-green-900 gap-0">
+          Emergency <br />
+          Service
+        </h1>
       </div>
-      <div class="flex items-center space-x-4">
+      <div class="flex items-center space-x-2 md:space-x-4">
         <!-- love -->
-        <div class="flex items-center bg-gray-100 text-black px-5 py-2 font-semibold rounded-full space-x-1">
-            <p class="mr-1">0</p>
-            <img class="h-6 w-6" src="./assets/heart.png" alt="Heart">
+        <div
+          class="flex items-center bg-gray-100 text-black px-3 py-1 md:px-5 md:py-2 font-semibold rounded-full space-x-1"
+        >
+          <p class="mr-1">0</p>
+          <img class="h-6 w-6" src="./assets/heart.png" alt="Heart" />
         </div>
         <!-- coins -->
-        <div class="flex items-center bg-gray-100 text-black px-5 py-2 font-semibold rounded-full space-x-1">
-            <p class="mr-1">100</p>
-            <img class="h-6 w-6" src="./assets/coin.png" alt="Coins">
+        <div
+          class="flex items-center bg-gray-100 text-black px-3 py-1 md:px-5 md:py-2 font-semibold rounded-full space-x-1"
+        >
+          <p class="mr-1">100</p>
+          <img class="h-6 w-6" src="./assets/coin.png" alt="Coins" />
         </div>
         <!-- copy -->
-        <div class="flex items-center bg-green-600 text-white px-4 py-2 font-semibold rounded-full space-x-1">
-            <p class="mr-1">0</p>
-            <p class="mr-1">Copy</p>
+        <div
+          class="flex items-center bg-green-600 text-white px-3 py-1 md:px-4 md:py-2 font-semibold rounded-full space-x-1"
+        >
+          <p class="mr-1">0</p>
+          <p class="mr-1">Copy</p>
         </div>
       </div>
     </nav>
+
+    <!-- hero section -->
+    <section class="flex items-center justify-center bg-gradient-to-r from-[#013223] via-[#006747] to-[#013223] h-64 w-full">
+      <div class="flex flex-col justify-center items-center text-center text-white px-4 text-white">
+        <img class="h-16 w-16" src="./assets/logo.png" alt="Logo" />
+        <h1 class="text-xl md:text-2xl lg:text-3xl font-bold my-2">Emergency Service Directory</h1>
+        <p class="font-semibold text-sm md:text-base text-gray-300">
+          Government Emergency Services at Your Fingertip - A Project by
+          Government of the People's Republic of Bangladesh
+        </p>
+      </div>
+    </section>
   </body>
 </html>
