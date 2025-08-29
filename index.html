@@ -69,11 +69,12 @@
 
     <!-- cards section -->
     <section
-      class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 p-4 md:px-12 lg:px-16 bg-blue-400"
+      class="flex w-full grid-cols-1 gap-6 p-4 md:px-12 lg:px-16 bg-blue-400"
     >
-      <!-- div 1 -->
+      <div class="gap-3 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 w-3/4">
+      <!-- card 1 -->
       <div
-        class="bg-white w-full rounded-lg shadow py-4 px-6 flex flex-col gap-3 items-center"
+        class="bg-white w-full h-fit rounded-lg shadow py-4 px-6 flex flex-col gap-3 items-center"
       >
         <!-- first part -->
         <div class="w-full flex justify-between items-center">
@@ -113,9 +114,136 @@
           </button>
         </div>
       </div>
-      <!-- div 2 -->
+      <!-- card 2 -->
       <div
-        class="bg-white w-full rounded-lg shadow py-4 px-6 flex flex-col gap-3 items-center"
+        class="bg-white w-full h-fit rounded-lg shadow py-4 px-6 flex flex-col gap-3 items-center"
+      >
+        <!-- first part -->
+        <div class="w-full flex justify-between items-center">
+          <div class="flex justify-center items-center bg-[#FFE3E2] p-4 rounded-md">
+            <img class="h-10 w-10" src="./assets/police.png" alt="police">
+          </div>
+          <div>
+            <div class="flex justify-center items-center bg-[#FFE3E2] p-4 rounded-md">
+            <img class="h-10 w-10" src="./assets/emergency.png" alt="Part 1">
+          </div>
+          </div>
+        </div>
+        <!-- second part -->
+        <div class="w-full flex flex-col items-start mt-2">
+          <div class="flex flex-col">
+            <h1 class="text-2xl font-semibold">National Emergency Number</h1>
+            <p class="text-gray-600 font-semibold">National Emergency</p>
+          </div>
+          <div class="flex flex-col mt-4 mb-2 gap-1">
+            <p class="text-4xl font-bold">999</p>
+            <p class="text-gray-500 font-medium text-center">All</p>
+          </div>
+        </div>
+        <!-- third part -->
+        <div class="flex w-full space-x-2">
+          <button
+            class="flex w-1/2 items-center justify-center space-x-1 border border-gray-100 px-3 py-1 md:px-4 md:py-2 font-semibold rounded-md"
+          >
+            <img src="./assets/copy.png" alt="copy" />
+            <span>Copy</span>
+          </button>
+          <button
+            class="flex w-1/2 items-center justify-center space-x-1 bg-green-500 text-white px-3 py-1 md:px-4 md:py-2 font-semibold rounded-md"
+          >
+            <img class="text-white" src="./assets/call.png" alt="call" />
+            <span>Call</span>
+          </button>
+        </div>
+      </div>
+      <!-- card 3 -->
+      <div
+        class="bg-white w-full h-fit rounded-lg shadow py-4 px-6 flex flex-col gap-3 items-center"
+      >
+        <!-- first part -->
+        <div class="w-full flex justify-between items-center">
+          <div class="flex justify-center items-center bg-[#FFE3E2] p-4 rounded-md">
+            <img class="h-10 w-10" src="./assets/fire-service.png" alt="fire service">
+          </div>
+          <div>
+            <div class="flex justify-center items-center bg-[#FFE3E2] p-4 rounded-md">
+            <img class="h-10 w-10" src="./assets/emergency.png" alt="Love">
+          </div>
+          </div>
+        </div>
+        <!-- second part -->
+        <div class="w-full flex flex-col items-start mt-2">
+          <div class="flex flex-col">
+            <h1 class="text-2xl font-semibold">National Emergency Number</h1>
+            <p class="text-gray-600 font-semibold">National Emergency</p>
+          </div>
+          <div class="flex flex-col mt-4 mb-2 gap-1">
+            <p class="text-4xl font-bold">999</p>
+            <p class="text-gray-500 font-medium text-center">All</p>
+          </div>
+        </div>
+        <!-- third part -->
+        <div class="flex w-full space-x-2">
+          <button
+            class="flex w-1/2 items-center justify-center space-x-1 border border-gray-100 px-3 py-1 md:px-4 md:py-2 font-semibold rounded-md"
+          >
+            <img src="./assets/copy.png" alt="copy" />
+            <span>Copy</span>
+          </button>
+          <button
+            class="flex w-1/2 items-center justify-center space-x-1 bg-green-500 text-white px-3 py-1 md:px-4 md:py-2 font-semibold rounded-md"
+          >
+            <img class="text-white" src="./assets/call.png" alt="call" />
+            <span>Call</span>
+          </button>
+        </div>
+      </div>
+
+      <!-- card 4 -->
+      <div
+        class="bg-white w-full h-fit rounded-lg shadow py-4 px-6 flex flex-col gap-3 items-center"
+      >
+        <!-- first part -->
+        <div class="w-full flex justify-between items-center">
+          <div class="flex justify-center items-center bg-[#FFE3E2] p-4 rounded-md">
+            <img class="h-10 w-10" src="./assets/ambulance.png" alt="ambulance">
+          </div>
+          <div>
+            <div class="flex justify-center items-center bg-[#FFE3E2] p-4 rounded-md">
+            <img class="h-10 w-10" src="./assets/emergency.png" alt="Part 1">
+          </div>
+          </div>
+        </div>
+        <!-- second part -->
+        <div class="w-full flex flex-col items-start mt-2">
+          <div class="flex flex-col">
+            <h1 class="text-2xl font-semibold">National Emergency Number</h1>
+            <p class="text-gray-600 font-semibold">National Emergency</p>
+          </div>
+          <div class="flex flex-col mt-4 mb-2 gap-1">
+            <p class="text-4xl font-bold">999</p>
+            <p class="text-gray-500 font-medium text-center">All</p>
+          </div>
+        </div>
+        <!-- third part -->
+        <div class="flex w-full space-x-2">
+          <button
+            class="flex w-1/2 items-center justify-center space-x-1 border border-gray-100 px-3 py-1 md:px-4 md:py-2 font-semibold rounded-md"
+          >
+            <img src="./assets/copy.png" alt="copy" />
+            <span>Copy</span>
+          </button>
+          <button
+            class="flex w-1/2 items-center justify-center space-x-1 bg-green-500 text-white px-3 py-1 md:px-4 md:py-2 font-semibold rounded-md"
+          >
+            <img class="text-white" src="./assets/call.png" alt="call" />
+            <span>Call</span>
+          </button>
+        </div>
+      </div>
+      <!-- card 5 -->
+      <div
+        class="bg-white w-full h-fit rounded-lg shadow py-4 px-6 flex flex-col gap-3 items-center"
       >
         <!-- first part -->
         <div class="w-full flex justify-between items-center">
@@ -155,9 +283,9 @@
           </button>
         </div>
       </div>
-      <!-- div 3 -->
+      <!-- card 6 -->
       <div
-        class="bg-white w-full rounded-lg shadow py-4 px-6 flex flex-col gap-3 items-center"
+        class="bg-white w-full h-fit rounded-lg shadow py-4 px-6 flex flex-col gap-3 items-center"
       >
         <!-- first part -->
         <div class="w-full flex justify-between items-center">
@@ -196,9 +324,147 @@
             <span>Call</span>
           </button>
         </div>
+      </div>
+
+      <!-- card 7 -->
+      <div
+        class="bg-white w-full h-fit rounded-lg shadow py-4 px-6 flex flex-col gap-3 items-center"
+      >
+        <!-- first part -->
+        <div class="w-full flex justify-between items-center">
+          <div class="flex justify-center items-center bg-[#FFE3E2] p-4 rounded-md">
+            <img class="h-10 w-10" src="./assets/emergency.png" alt="Part 1">
+          </div>
+          <div>
+            <div class="flex justify-center items-center bg-[#FFE3E2] p-4 rounded-md">
+            <img class="h-10 w-10" src="./assets/emergency.png" alt="Part 1">
+          </div>
+          </div>
+        </div>
+        <!-- second part -->
+        <div class="w-full flex flex-col items-start mt-2">
+          <div class="flex flex-col">
+            <h1 class="text-2xl font-semibold">National Emergency Number</h1>
+            <p class="text-gray-600 font-semibold">National Emergency</p>
+          </div>
+          <div class="flex flex-col mt-4 mb-2 gap-1">
+            <p class="text-4xl font-bold">999</p>
+            <p class="text-gray-500 font-medium text-center">All</p>
+          </div>
+        </div>
+        <!-- third part -->
+        <div class="flex w-full space-x-2">
+          <button
+            class="flex w-1/2 items-center justify-center space-x-1 border border-gray-100 px-3 py-1 md:px-4 md:py-2 font-semibold rounded-md"
+          >
+            <img src="./assets/copy.png" alt="copy" />
+            <span>Copy</span>
+          </button>
+          <button
+            class="flex w-1/2 items-center justify-center space-x-1 bg-green-500 text-white px-3 py-1 md:px-4 md:py-2 font-semibold rounded-md"
+          >
+            <img class="text-white" src="./assets/call.png" alt="call" />
+            <span>Call</span>
+          </button>
+        </div>
+      </div>
+      <!-- card 8 -->
+      <div
+        class="bg-white w-full h-fit rounded-lg shadow py-4 px-6 flex flex-col gap-3 items-center"
+      >
+        <!-- first part -->
+        <div class="w-full flex justify-between items-center">
+          <div class="flex justify-center items-center bg-[#FFE3E2] p-4 rounded-md">
+            <img class="h-10 w-10" src="./assets/emergency.png" alt="Part 1">
+          </div>
+          <div>
+            <div class="flex justify-center items-center bg-[#FFE3E2] p-4 rounded-md">
+            <img class="h-10 w-10" src="./assets/emergency.png" alt="Part 1">
+          </div>
+          </div>
+        </div>
+        <!-- second part -->
+        <div class="w-full flex flex-col items-start mt-2">
+          <div class="flex flex-col">
+            <h1 class="text-2xl font-semibold">National Emergency Number</h1>
+            <p class="text-gray-600 font-semibold">National Emergency</p>
+          </div>
+          <div class="flex flex-col mt-4 mb-2 gap-1">
+            <p class="text-4xl font-bold">999</p>
+            <p class="text-gray-500 font-medium text-center">All</p>
+          </div>
+        </div>
+        <!-- third part -->
+        <div class="flex w-full space-x-2">
+          <button
+            class="flex w-1/2 items-center justify-center space-x-1 border border-gray-100 px-3 py-1 md:px-4 md:py-2 font-semibold rounded-md"
+          >
+            <img src="./assets/copy.png" alt="copy" />
+            <span>Copy</span>
+          </button>
+          <button
+            class="flex w-1/2 items-center justify-center space-x-1 bg-green-500 text-white px-3 py-1 md:px-4 md:py-2 font-semibold rounded-md"
+          >
+            <img class="text-white" src="./assets/call.png" alt="call" />
+            <span>Call</span>
+          </button>
+        </div>
+      </div>
+      <!-- card 9 -->
+      <div
+        class="bg-white w-full h-fit rounded-lg shadow py-4 px-6 flex flex-col gap-3 items-center"
+      >
+        <!-- first part -->
+        <div class="w-full flex justify-between items-center">
+          <div class="flex justify-center items-center bg-[#FFE3E2] p-4 rounded-md">
+            <img class="h-10 w-10" src="./assets/emergency.png" alt="Part 1">
+          </div>
+          <div>
+            <div class="flex justify-center items-center bg-[#FFE3E2] p-4 rounded-md">
+            <img class="h-10 w-10" src="./assets/emergency.png" alt="Part 1">
+          </div>
+          </div>
+        </div>
+        <!-- second part -->
+        <div class="w-full flex flex-col items-start mt-2">
+          <div class="flex flex-col">
+            <h1 class="text-2xl font-semibold">National Emergency Number</h1>
+            <p class="text-gray-600 font-semibold">National Emergency</p>
+          </div>
+          <div class="flex flex-col mt-4 mb-2 gap-1">
+            <p class="text-4xl font-bold">999</p>
+            <p class="text-gray-500 font-medium text-center">All</p>
+          </div>
+        </div>
+        <!-- third part -->
+        <div class="flex w-full space-x-2">
+          <button
+            class="flex w-1/2 items-center justify-center space-x-1 border border-gray-100 px-3 py-1 md:px-4 md:py-2 font-semibold rounded-md"
+          >
+            <img src="./assets/copy.png" alt="copy" />
+            <span>Copy</span>
+          </button>
+          <button
+            class="flex w-1/2 items-center justify-center space-x-1 bg-green-500 text-white px-3 py-1 md:px-4 md:py-2 font-semibold rounded-md"
+          >
+            <img class="text-white" src="./assets/call.png" alt="call" />
+            <span>Call</span>
+          </button>
+        </div>
+      </div>
       </div>
       <!-- Part 4 -->
-      <div class="bg-white rounded-lg shadow p-4 flex flex-col items-center">
+      <div class="bg-white grid grid-cols-1 w-1/4 h-fit rounded-lg shadow p-4 flex flex-col items-center">
+        <h2 class="font-bold mb-2">Part 4</h2>
+        <div>adfasdf</div>
+        <h2 class="font-bold mb-2">Part 4</h2>
+        <div>adfasdf</div>
+        <h2 class="font-bold mb-2">Part 4</h2>
+        <div>adfasdf</div>
+        <h2 class="font-bold mb-2">Part 4</h2>
+        <div>adfasdf</div>
+        <h2 class="font-bold mb-2">Part 4</h2>
+        <div>adfasdf</div>
         <h2 class="font-bold mb-2">Part 4</h2>
         <div>adfasdf</div>
       </div>
