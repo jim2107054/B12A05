@@ -5,7 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Emergency Service</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
   </head>
   <body>
     <!-- navbar -->
@@ -72,402 +75,482 @@
     <section
       class="flex flex-col md:flex-row w-full grid-cols-1 gap-6 p-4 md:px-12 lg:px-16 bg-blue-50"
     >
-      <div class="gap-3 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 w-full md:w-3/4">
-      <!-- card 1 -->
+      <!-- Left Part -->
       <div
-        class="bg-white w-full h-fit rounded-lg shadow py-4 px-6 flex flex-col gap-3 items-center"
+        class="gap-3 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 w-full md:w-3/4"
       >
-        <!-- first part -->
-        <div class="w-full flex justify-between items-center">
-          <div class="flex justify-center items-center bg-[#FFE3E2] p-2 rounded-md">
-            <img class="h-10 w-10" src="./assets/emergency.png" alt="emergency">
+        <!-- card 1 -->
+        <div
+          class="bg-white w-full h-fit rounded-lg shadow py-4 px-6 flex flex-col gap-3 items-center"
+        >
+          <!-- first part -->
+          <div class="w-full flex justify-between items-center">
+            <div
+              class="flex justify-center items-center bg-[#FFE3E2] p-2 rounded-md"
+            >
+              <img
+                class="h-10 w-10"
+                src="./assets/emergency.png"
+                alt="emergency"
+              />
+            </div>
+            <div>
+              <div class="flex justify-center items-center p-1 rounded-md">
+                <p class="text-3xl cursor-pointer">
+                  <i class="fa-regular fa-heart"></i>
+                </p>
+              </div>
+            </div>
           </div>
-          <div>
-            <div class="flex justify-center items-center p-1 rounded-md">
-            <p class="text-3xl cursor-pointer"><i class="fa-regular fa-heart"></i></p>
+          <!-- second part -->
+          <div class="w-full flex flex-col items-start mt-2">
+            <div class="flex flex-col">
+              <h1 class="text-2xl font-semibold">National Emergency Number</h1>
+              <p class="text-gray-600 font-semibold">National Emergency</p>
+            </div>
+            <div class="flex flex-col mt-4 mb-2 gap-1">
+              <p class="text-4xl font-bold">999</p>
+              <p class="text-gray-500 font-medium text-center">All</p>
+            </div>
           </div>
-          </div>
-        </div>
-        <!-- second part -->
-        <div class="w-full flex flex-col items-start mt-2">
-          <div class="flex flex-col">
-            <h1 class="text-2xl font-semibold">National Emergency Number</h1>
-            <p class="text-gray-600 font-semibold">National Emergency</p>
-          </div>
-          <div class="flex flex-col mt-4 mb-2 gap-1">
-            <p class="text-4xl font-bold">999</p>
-            <p class="text-gray-500 font-medium text-center">All</p>
-          </div>
-        </div>
-        <!-- third part -->
-        <div class="flex w-full space-x-2">
-          <button
-            class="flex w-1/2 items-center justify-center space-x-1 border border-gray-300 px-3 py-1 md:px-4 md:py-2 font-semibold rounded-md"
-          >
-            <img src="./assets/copy.png" alt="copy" />
-            <span>Copy</span>
-          </button>
-          <button
-            class="flex w-1/2 items-center justify-center space-x-1 bg-green-500 text-white px-3 py-1 md:px-4 md:py-2 font-semibold rounded-md"
-          >
-            <img class="text-white" src="./assets/call.png" alt="call" />
-            <span>Call</span>
-          </button>
-        </div>
-      </div>
-      <!-- card 2 -->
-      <div
-        class="bg-white w-full h-fit rounded-lg shadow py-4 px-6 flex flex-col gap-3 items-center"
-      >
-        <!-- first part -->
-        <div class="w-full flex justify-between items-center">
-          <div class="flex justify-center items-center bg-[#FFE3E2] p-2 rounded-md">
-            <img class="h-10 w-10" src="./assets/police.png" alt="police">
-          </div>
-          <div>
-            <div class="flex justify-center items-center p-1 rounded-md">
-            <p class="text-3xl cursor-pointer"><i class="fa-regular fa-heart"></i></p>
-          </div>
+          <!-- third part -->
+          <div class="flex w-full space-x-2">
+            <button
+              class="flex w-1/2 items-center justify-center space-x-1 border border-gray-300 px-3 py-1 md:px-4 md:py-2 font-semibold rounded-md"
+            >
+              <img src="./assets/copy.png" alt="copy" />
+              <span>Copy</span>
+            </button>
+            <button
+              class="flex w-1/2 items-center justify-center space-x-1 bg-green-500 text-white px-3 py-1 md:px-4 md:py-2 font-semibold rounded-md"
+            >
+              <img class="text-white" src="./assets/call.png" alt="call" />
+              <span>Call</span>
+            </button>
           </div>
         </div>
-        <!-- second part -->
-        <div class="w-full flex flex-col items-start mt-2">
-          <div class="flex flex-col">
-            <h1 class="text-2xl font-semibold">National Emergency Number</h1>
-            <p class="text-gray-600 font-semibold">National Emergency</p>
+        <!-- card 2 -->
+        <div
+          class="bg-white w-full h-fit rounded-lg shadow py-4 px-6 flex flex-col gap-3 items-center"
+        >
+          <!-- first part -->
+          <div class="w-full flex justify-between items-center">
+            <div
+              class="flex justify-center items-center bg-[#FFE3E2] p-2 rounded-md"
+            >
+              <img class="h-10 w-10" src="./assets/police.png" alt="police" />
+            </div>
+            <div>
+              <div class="flex justify-center items-center p-1 rounded-md">
+                <p class="text-3xl cursor-pointer">
+                  <i class="fa-regular fa-heart"></i>
+                </p>
+              </div>
+            </div>
           </div>
-          <div class="flex flex-col mt-4 mb-2 gap-1">
-            <p class="text-4xl font-bold">999</p>
-            <p class="text-gray-500 font-medium text-center">All</p>
+          <!-- second part -->
+          <div class="w-full flex flex-col items-start mt-2">
+            <div class="flex flex-col">
+              <h1 class="text-2xl font-semibold">National Emergency Number</h1>
+              <p class="text-gray-600 font-semibold">National Emergency</p>
+            </div>
+            <div class="flex flex-col mt-4 mb-2 gap-1">
+              <p class="text-4xl font-bold">999</p>
+              <p class="text-gray-500 font-medium text-center">All</p>
+            </div>
           </div>
-        </div>
-        <!-- third part -->
-        <div class="flex w-full space-x-2">
-          <button
-            class="flex w-1/2 items-center justify-center space-x-1 border border-gray-300 px-3 py-1 md:px-4 md:py-2 font-semibold rounded-md"
-          >
-            <img src="./assets/copy.png" alt="copy" />
-            <span>Copy</span>
-          </button>
-          <button
-            class="flex w-1/2 items-center justify-center space-x-1 bg-green-500 text-white px-3 py-1 md:px-4 md:py-2 font-semibold rounded-md"
-          >
-            <img class="text-white" src="./assets/call.png" alt="call" />
-            <span>Call</span>
-          </button>
-        </div>
-      </div>
-      <!-- card 3 -->
-      <div
-        class="bg-white w-full h-fit rounded-lg shadow py-4 px-6 flex flex-col gap-3 items-center"
-      >
-        <!-- first part -->
-        <div class="w-full flex justify-between items-center">
-          <div class="flex justify-center items-center bg-[#FFE3E2] p-2 rounded-md">
-            <img class="h-10 w-10" src="./assets/fire-service.png" alt="fire service">
-          </div>
-          <div>
-            <div class="flex justify-center items-center p-1 rounded-md">
-            <p class="text-3xl cursor-pointer"><i class="fa-regular fa-heart"></i></p>
-          </div>
-          </div>
-        </div>
-        <!-- second part -->
-        <div class="w-full flex flex-col items-start mt-2">
-          <div class="flex flex-col">
-            <h1 class="text-2xl font-semibold">National Emergency Number</h1>
-            <p class="text-gray-600 font-semibold">National Emergency</p>
-          </div>
-          <div class="flex flex-col mt-4 mb-2 gap-1">
-            <p class="text-4xl font-bold">999</p>
-            <p class="text-gray-500 font-medium text-center">All</p>
+          <!-- third part -->
+          <div class="flex w-full space-x-2">
+            <button
+              class="flex w-1/2 items-center justify-center space-x-1 border border-gray-300 px-3 py-1 md:px-4 md:py-2 font-semibold rounded-md"
+            >
+              <img src="./assets/copy.png" alt="copy" />
+              <span>Copy</span>
+            </button>
+            <button
+              class="flex w-1/2 items-center justify-center space-x-1 bg-green-500 text-white px-3 py-1 md:px-4 md:py-2 font-semibold rounded-md"
+            >
+              <img class="text-white" src="./assets/call.png" alt="call" />
+              <span>Call</span>
+            </button>
           </div>
         </div>
-        <!-- third part -->
-        <div class="flex w-full space-x-2">
-          <button
-            class="flex w-1/2 items-center justify-center space-x-1 border border-gray-300 px-3 py-1 md:px-4 md:py-2 font-semibold rounded-md"
-          >
-            <img src="./assets/copy.png" alt="copy" />
-            <span>Copy</span>
-          </button>
-          <button
-            class="flex w-1/2 items-center justify-center space-x-1 bg-green-500 text-white px-3 py-1 md:px-4 md:py-2 font-semibold rounded-md"
-          >
-            <img class="text-white" src="./assets/call.png" alt="call" />
-            <span>Call</span>
-          </button>
+        <!-- card 3 -->
+        <div
+          class="bg-white w-full h-fit rounded-lg shadow py-4 px-6 flex flex-col gap-3 items-center"
+        >
+          <!-- first part -->
+          <div class="w-full flex justify-between items-center">
+            <div
+              class="flex justify-center items-center bg-[#FFE3E2] p-2 rounded-md"
+            >
+              <img
+                class="h-10 w-10"
+                src="./assets/fire-service.png"
+                alt="fire service"
+              />
+            </div>
+            <div>
+              <div class="flex justify-center items-center p-1 rounded-md">
+                <p class="text-3xl cursor-pointer">
+                  <i class="fa-regular fa-heart"></i>
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- second part -->
+          <div class="w-full flex flex-col items-start mt-2">
+            <div class="flex flex-col">
+              <h1 class="text-2xl font-semibold">National Emergency Number</h1>
+              <p class="text-gray-600 font-semibold">National Emergency</p>
+            </div>
+            <div class="flex flex-col mt-4 mb-2 gap-1">
+              <p class="text-4xl font-bold">999</p>
+              <p class="text-gray-500 font-medium text-center">All</p>
+            </div>
+          </div>
+          <!-- third part -->
+          <div class="flex w-full space-x-2">
+            <button
+              class="flex w-1/2 items-center justify-center space-x-1 border border-gray-300 px-3 py-1 md:px-4 md:py-2 font-semibold rounded-md"
+            >
+              <img src="./assets/copy.png" alt="copy" />
+              <span>Copy</span>
+            </button>
+            <button
+              class="flex w-1/2 items-center justify-center space-x-1 bg-green-500 text-white px-3 py-1 md:px-4 md:py-2 font-semibold rounded-md"
+            >
+              <img class="text-white" src="./assets/call.png" alt="call" />
+              <span>Call</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- card 4 -->
+        <div
+          class="bg-white w-full h-fit rounded-lg shadow py-4 px-6 flex flex-col gap-3 items-center"
+        >
+          <!-- first part -->
+          <div class="w-full flex justify-between items-center">
+            <div
+              class="flex justify-center items-center bg-[#FFE3E2] p-2 rounded-md"
+            >
+              <img
+                class="h-10 w-10"
+                src="./assets/ambulance.png"
+                alt="ambulance"
+              />
+            </div>
+            <div>
+              <div class="flex justify-center items-center p-1 rounded-md">
+                <p class="text-3xl cursor-pointer">
+                  <i class="fa-regular fa-heart"></i>
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- second part -->
+          <div class="w-full flex flex-col items-start mt-2">
+            <div class="flex flex-col">
+              <h1 class="text-2xl font-semibold">National Emergency Number</h1>
+              <p class="text-gray-600 font-semibold">National Emergency</p>
+            </div>
+            <div class="flex flex-col mt-4 mb-2 gap-1">
+              <p class="text-4xl font-bold">999</p>
+              <p class="text-gray-500 font-medium text-center">All</p>
+            </div>
+          </div>
+          <!-- third part -->
+          <div class="flex w-full space-x-2">
+            <button
+              class="flex w-1/2 items-center justify-center space-x-1 border border-gray-300 px-3 py-1 md:px-4 md:py-2 font-semibold rounded-md"
+            >
+              <img src="./assets/copy.png" alt="copy" />
+              <span>Copy</span>
+            </button>
+            <button
+              class="flex w-1/2 items-center justify-center space-x-1 bg-green-500 text-white px-3 py-1 md:px-4 md:py-2 font-semibold rounded-md"
+            >
+              <img class="text-white" src="./assets/call.png" alt="call" />
+              <span>Call</span>
+            </button>
+          </div>
+        </div>
+        <!-- card 5 -->
+        <div
+          class="bg-white w-full h-fit rounded-lg shadow py-4 px-6 flex flex-col gap-3 items-center"
+        >
+          <!-- first part -->
+          <div class="w-full flex justify-between items-center">
+            <div
+              class="flex justify-center items-center bg-[#FFE3E2] p-2 rounded-md"
+            >
+              <img
+                class="h-10 w-10"
+                src="./assets/emergency.png"
+                alt="Part 1"
+              />
+            </div>
+            <div>
+              <div class="flex justify-center items-center p-1 rounded-md">
+                <p class="text-3xl cursor-pointer">
+                  <i class="fa-regular fa-heart"></i>
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- second part -->
+          <div class="w-full flex flex-col items-start mt-2">
+            <div class="flex flex-col">
+              <h1 class="text-2xl font-semibold">National Emergency Number</h1>
+              <p class="text-gray-600 font-semibold">National Emergency</p>
+            </div>
+            <div class="flex flex-col mt-4 mb-2 gap-1">
+              <p class="text-4xl font-bold">999</p>
+              <p class="text-gray-500 font-medium text-center">All</p>
+            </div>
+          </div>
+          <!-- third part -->
+          <div class="flex w-full space-x-2">
+            <button
+              class="flex w-1/2 items-center justify-center space-x-1 border border-gray-300 px-3 py-1 md:px-4 md:py-2 font-semibold rounded-md"
+            >
+              <img src="./assets/copy.png" alt="copy" />
+              <span>Copy</span>
+            </button>
+            <button
+              class="flex w-1/2 items-center justify-center space-x-1 bg-green-500 text-white px-3 py-1 md:px-4 md:py-2 font-semibold rounded-md"
+            >
+              <img class="text-white" src="./assets/call.png" alt="call" />
+              <span>Call</span>
+            </button>
+          </div>
+        </div>
+        <!-- card 6 -->
+        <div
+          class="bg-white w-full h-fit rounded-lg shadow py-4 px-6 flex flex-col gap-3 items-center"
+        >
+          <!-- first part -->
+          <div class="w-full flex justify-between items-center">
+            <div
+              class="flex justify-center items-center bg-[#FFE3E2] p-2 rounded-md"
+            >
+              <img
+                class="h-10 w-10"
+                src="./assets/emergency.png"
+                alt="Part 1"
+              />
+            </div>
+            <div>
+              <div class="flex justify-center items-center p-1 rounded-md">
+                <p class="text-3xl cursor-pointer">
+                  <i class="fa-regular fa-heart"></i>
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- second part -->
+          <div class="w-full flex flex-col items-start mt-2">
+            <div class="flex flex-col">
+              <h1 class="text-2xl font-semibold">National Emergency Number</h1>
+              <p class="text-gray-600 font-semibold">National Emergency</p>
+            </div>
+            <div class="flex flex-col mt-4 mb-2 gap-1">
+              <p class="text-4xl font-bold">999</p>
+              <p class="text-gray-500 font-medium text-center">All</p>
+            </div>
+          </div>
+          <!-- third part -->
+          <div class="flex w-full space-x-2">
+            <button
+              class="flex w-1/2 items-center justify-center space-x-1 border border-gray-300 px-3 py-1 md:px-4 md:py-2 font-semibold rounded-md"
+            >
+              <img src="./assets/copy.png" alt="copy" />
+              <span>Copy</span>
+            </button>
+            <button
+              class="flex w-1/2 items-center justify-center space-x-1 bg-green-500 text-white px-3 py-1 md:px-4 md:py-2 font-semibold rounded-md"
+            >
+              <img class="text-white" src="./assets/call.png" alt="call" />
+              <span>Call</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- card 7 -->
+        <div
+          class="bg-white w-full h-fit rounded-lg shadow py-4 px-6 flex flex-col gap-3 items-center"
+        >
+          <!-- first part -->
+          <div class="w-full flex justify-between items-center">
+            <div
+              class="flex justify-center items-center bg-[#FFE3E2] p-2 rounded-md"
+            >
+              <img
+                class="h-10 w-10"
+                src="./assets/emergency.png"
+                alt="Part 1"
+              />
+            </div>
+            <div>
+              <div class="flex justify-center items-center p-1 rounded-md">
+                <p class="text-3xl cursor-pointer">
+                  <i class="fa-regular fa-heart"></i>
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- second part -->
+          <div class="w-full flex flex-col items-start mt-2">
+            <div class="flex flex-col">
+              <h1 class="text-2xl font-semibold">National Emergency Number</h1>
+              <p class="text-gray-600 font-semibold">National Emergency</p>
+            </div>
+            <div class="flex flex-col mt-4 mb-2 gap-1">
+              <p class="text-4xl font-bold">999</p>
+              <p class="text-gray-500 font-medium text-center">All</p>
+            </div>
+          </div>
+          <!-- third part -->
+          <div class="flex w-full space-x-2">
+            <button
+              class="flex w-1/2 items-center justify-center space-x-1 border border-gray-300 px-3 py-1 md:px-4 md:py-2 font-semibold rounded-md"
+            >
+              <img src="./assets/copy.png" alt="copy" />
+              <span>Copy</span>
+            </button>
+            <button
+              class="flex w-1/2 items-center justify-center space-x-1 bg-green-500 text-white px-3 py-1 md:px-4 md:py-2 font-semibold rounded-md"
+            >
+              <img class="text-white" src="./assets/call.png" alt="call" />
+              <span>Call</span>
+            </button>
+          </div>
+        </div>
+        <!-- card 8 -->
+        <div
+          class="bg-white w-full h-fit rounded-lg shadow py-4 px-6 flex flex-col gap-3 items-center"
+        >
+          <!-- first part -->
+          <div class="w-full flex justify-between items-center">
+            <div
+              class="flex justify-center items-center bg-[#FFE3E2] p-2 rounded-md"
+            >
+              <img
+                class="h-10 w-10"
+                src="./assets/emergency.png"
+                alt="Part 1"
+              />
+            </div>
+            <div>
+              <div class="flex justify-center items-center p-1 rounded-md">
+                <p class="text-3xl cursor-pointer">
+                  <i class="fa-regular fa-heart"></i>
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- second part -->
+          <div class="w-full flex flex-col items-start mt-2">
+            <div class="flex flex-col">
+              <h1 class="text-2xl font-semibold">National Emergency Number</h1>
+              <p class="text-gray-600 font-semibold">National Emergency</p>
+            </div>
+            <div class="flex flex-col mt-4 mb-2 gap-1">
+              <p class="text-4xl font-bold">999</p>
+              <p class="text-gray-500 font-medium text-center">All</p>
+            </div>
+          </div>
+          <!-- third part -->
+          <div class="flex w-full space-x-2">
+            <button
+              class="flex w-1/2 items-center justify-center space-x-1 border border-gray-300 px-3 py-1 md:px-4 md:py-2 font-semibold rounded-md"
+            >
+              <img src="./assets/copy.png" alt="copy" />
+              <span>Copy</span>
+            </button>
+            <button
+              class="flex w-1/2 items-center justify-center space-x-1 bg-green-500 text-white px-3 py-1 md:px-4 md:py-2 font-semibold rounded-md"
+            >
+              <img class="text-white" src="./assets/call.png" alt="call" />
+              <span>Call</span>
+            </button>
+          </div>
+        </div>
+        <!-- card 9 -->
+        <div
+          class="bg-white w-full h-fit rounded-lg shadow py-4 px-6 flex flex-col gap-3 items-center"
+        >
+          <!-- first part -->
+          <div class="w-full flex justify-between items-center">
+            <div
+              class="flex justify-center items-center bg-[#FFE3E2] p-2 rounded-md"
+            >
+              <img
+                class="h-10 w-10"
+                src="./assets/emergency.png"
+                alt="Part 1"
+              />
+            </div>
+            <div>
+              <div class="flex justify-center items-center p-1 rounded-md">
+                <p class="text-3xl cursor-pointer">
+                  <i class="fa-regular fa-heart"></i>
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- second part -->
+          <div class="w-full flex flex-col items-start mt-2">
+            <div class="flex flex-col">
+              <h1 class="text-2xl font-semibold">National Emergency Number</h1>
+              <p class="text-gray-600 font-semibold">National Emergency</p>
+            </div>
+            <div class="flex flex-col mt-4 mb-2 gap-1">
+              <p class="text-4xl font-bold">999</p>
+              <p class="text-gray-500 font-medium text-center">All</p>
+            </div>
+          </div>
+          <!-- third part -->
+          <div class="flex w-full space-x-2">
+            <button
+              class="flex w-1/2 items-center justify-center space-x-1 border border-gray-300 px-3 py-1 md:px-4 md:py-2 font-semibold rounded-md"
+            >
+              <img src="./assets/copy.png" alt="copy" />
+              <span>Copy</span>
+            </button>
+            <button
+              class="flex w-1/2 items-center justify-center space-x-1 bg-green-500 text-white px-3 py-1 md:px-4 md:py-2 font-semibold rounded-md"
+            >
+              <img class="text-white" src="./assets/call.png" alt="call" />
+              <span>Call</span>
+            </button>
+          </div>
         </div>
       </div>
 
-      <!-- card 4 -->
-      <div
-        class="bg-white w-full h-fit rounded-lg shadow py-4 px-6 flex flex-col gap-3 items-center"
-      >
-        <!-- first part -->
-        <div class="w-full flex justify-between items-center">
-          <div class="flex justify-center items-center bg-[#FFE3E2] p-2 rounded-md">
-            <img class="h-10 w-10" src="./assets/ambulance.png" alt="ambulance">
-          </div>
-          <div>
-            <div class="flex justify-center items-center p-1 rounded-md">
-            <p class="text-3xl cursor-pointer"><i class="fa-regular fa-heart"></i></p>
-          </div>
-          </div>
-        </div>
-        <!-- second part -->
-        <div class="w-full flex flex-col items-start mt-2">
-          <div class="flex flex-col">
-            <h1 class="text-2xl font-semibold">National Emergency Number</h1>
-            <p class="text-gray-600 font-semibold">National Emergency</p>
-          </div>
-          <div class="flex flex-col mt-4 mb-2 gap-1">
-            <p class="text-4xl font-bold">999</p>
-            <p class="text-gray-500 font-medium text-center">All</p>
-          </div>
-        </div>
-        <!-- third part -->
-        <div class="flex w-full space-x-2">
-          <button
-            class="flex w-1/2 items-center justify-center space-x-1 border border-gray-300 px-3 py-1 md:px-4 md:py-2 font-semibold rounded-md"
-          >
-            <img src="./assets/copy.png" alt="copy" />
-            <span>Copy</span>
-          </button>
-          <button
-            class="flex w-1/2 items-center justify-center space-x-1 bg-green-500 text-white px-3 py-1 md:px-4 md:py-2 font-semibold rounded-md"
-          >
-            <img class="text-white" src="./assets/call.png" alt="call" />
-            <span>Call</span>
-          </button>
-        </div>
-      </div>
-      <!-- card 5 -->
-      <div
-        class="bg-white w-full h-fit rounded-lg shadow py-4 px-6 flex flex-col gap-3 items-center"
-      >
-        <!-- first part -->
-        <div class="w-full flex justify-between items-center">
-          <div class="flex justify-center items-center bg-[#FFE3E2] p-2 rounded-md">
-            <img class="h-10 w-10" src="./assets/emergency.png" alt="Part 1">
-          </div>
-          <div>
-            <div class="flex justify-center items-center p-1 rounded-md">
-            <p class="text-3xl cursor-pointer"><i class="fa-regular fa-heart"></i></p>
-          </div>
-          </div>
-        </div>
-        <!-- second part -->
-        <div class="w-full flex flex-col items-start mt-2">
-          <div class="flex flex-col">
-            <h1 class="text-2xl font-semibold">National Emergency Number</h1>
-            <p class="text-gray-600 font-semibold">National Emergency</p>
-          </div>
-          <div class="flex flex-col mt-4 mb-2 gap-1">
-            <p class="text-4xl font-bold">999</p>
-            <p class="text-gray-500 font-medium text-center">All</p>
-          </div>
-        </div>
-        <!-- third part -->
-        <div class="flex w-full space-x-2">
-          <button
-            class="flex w-1/2 items-center justify-center space-x-1 border border-gray-300 px-3 py-1 md:px-4 md:py-2 font-semibold rounded-md"
-          >
-            <img src="./assets/copy.png" alt="copy" />
-            <span>Copy</span>
-          </button>
-          <button
-            class="flex w-1/2 items-center justify-center space-x-1 bg-green-500 text-white px-3 py-1 md:px-4 md:py-2 font-semibold rounded-md"
-          >
-            <img class="text-white" src="./assets/call.png" alt="call" />
-            <span>Call</span>
-          </button>
-        </div>
-      </div>
-      <!-- card 6 -->
-      <div
-        class="bg-white w-full h-fit rounded-lg shadow py-4 px-6 flex flex-col gap-3 items-center"
-      >
-        <!-- first part -->
-        <div class="w-full flex justify-between items-center">
-          <div class="flex justify-center items-center bg-[#FFE3E2] p-2 rounded-md">
-            <img class="h-10 w-10" src="./assets/emergency.png" alt="Part 1">
-          </div>
-          <div>
-            <div class="flex justify-center items-center p-1 rounded-md">
-            <p class="text-3xl cursor-pointer"><i class="fa-regular fa-heart"></i></p>
-          </div>
-          </div>
-        </div>
-        <!-- second part -->
-        <div class="w-full flex flex-col items-start mt-2">
-          <div class="flex flex-col">
-            <h1 class="text-2xl font-semibold">National Emergency Number</h1>
-            <p class="text-gray-600 font-semibold">National Emergency</p>
-          </div>
-          <div class="flex flex-col mt-4 mb-2 gap-1">
-            <p class="text-4xl font-bold">999</p>
-            <p class="text-gray-500 font-medium text-center">All</p>
-          </div>
-        </div>
-        <!-- third part -->
-        <div class="flex w-full space-x-2">
-          <button
-            class="flex w-1/2 items-center justify-center space-x-1 border border-gray-300 px-3 py-1 md:px-4 md:py-2 font-semibold rounded-md"
-          >
-            <img src="./assets/copy.png" alt="copy" />
-            <span>Copy</span>
-          </button>
-          <button
-            class="flex w-1/2 items-center justify-center space-x-1 bg-green-500 text-white px-3 py-1 md:px-4 md:py-2 font-semibold rounded-md"
-          >
-            <img class="text-white" src="./assets/call.png" alt="call" />
-            <span>Call</span>
-          </button>
-        </div>
-      </div>
 
-      <!-- card 7 -->
+
+      <!-- Right Part -->
       <div
-        class="bg-white w-full h-fit rounded-lg shadow py-4 px-6 flex flex-col gap-3 items-center"
+        class="bg-white grid grid-cols-1 w-full md:w-1/4 h-fit rounded-lg shadow p-4 flex flex-col items-center"
       >
-        <!-- first part -->
-        <div class="w-full flex justify-between items-center">
-          <div class="flex justify-center items-center bg-[#FFE3E2] p-2 rounded-md">
-            <img class="h-10 w-10" src="./assets/emergency.png" alt="Part 1">
+        <div class="flex justify-between mb-4">
+          <div class="flex items-center justify-center gap-2 py-2">
+            <img class="h-5 w-5" src="./assets/clock.png" alt="clock" />
+            <p class="font-semibold text-center">Call History</p>
           </div>
           <div>
-            <div class="flex justify-center items-center p-1 rounded-md">
-            <p class="text-3xl cursor-pointer"><i class="fa-regular fa-heart"></i></p>
-          </div>
-          </div>
-        </div>
-        <!-- second part -->
-        <div class="w-full flex flex-col items-start mt-2">
-          <div class="flex flex-col">
-            <h1 class="text-2xl font-semibold">National Emergency Number</h1>
-            <p class="text-gray-600 font-semibold">National Emergency</p>
-          </div>
-          <div class="flex flex-col mt-4 mb-2 gap-1">
-            <p class="text-4xl font-bold">999</p>
-            <p class="text-gray-500 font-medium text-center">All</p>
+            <button
+              class="text-white text-base font-semibold bg-green-500 px-4 py-1.5 rounded-full"
+            >
+              Clear
+            </button>
           </div>
         </div>
-        <!-- third part -->
-        <div class="flex w-full space-x-2">
-          <button
-            class="flex w-1/2 items-center justify-center space-x-1 border border-gray-300 px-3 py-1 md:px-4 md:py-2 font-semibold rounded-md"
-          >
-            <img src="./assets/copy.png" alt="copy" />
-            <span>Copy</span>
-          </button>
-          <button
-            class="flex w-1/2 items-center justify-center space-x-1 bg-green-500 text-white px-3 py-1 md:px-4 md:py-2 font-semibold rounded-md"
-          >
-            <img class="text-white" src="./assets/call.png" alt="call" />
-            <span>Call</span>
-          </button>
+        <div>
+          ladfjslajf
         </div>
-      </div>
-      <!-- card 8 -->
-      <div
-        class="bg-white w-full h-fit rounded-lg shadow py-4 px-6 flex flex-col gap-3 items-center"
-      >
-        <!-- first part -->
-        <div class="w-full flex justify-between items-center">
-          <div class="flex justify-center items-center bg-[#FFE3E2] p-2 rounded-md">
-            <img class="h-10 w-10" src="./assets/emergency.png" alt="Part 1">
-          </div>
-          <div>
-            <div class="flex justify-center items-center p-1 rounded-md">
-            <p class="text-3xl cursor-pointer"><i class="fa-regular fa-heart"></i></p>
-          </div>
-          </div>
-        </div>
-        <!-- second part -->
-        <div class="w-full flex flex-col items-start mt-2">
-          <div class="flex flex-col">
-            <h1 class="text-2xl font-semibold">National Emergency Number</h1>
-            <p class="text-gray-600 font-semibold">National Emergency</p>
-          </div>
-          <div class="flex flex-col mt-4 mb-2 gap-1">
-            <p class="text-4xl font-bold">999</p>
-            <p class="text-gray-500 font-medium text-center">All</p>
-          </div>
-        </div>
-        <!-- third part -->
-        <div class="flex w-full space-x-2">
-          <button
-            class="flex w-1/2 items-center justify-center space-x-1 border border-gray-300 px-3 py-1 md:px-4 md:py-2 font-semibold rounded-md"
-          >
-            <img src="./assets/copy.png" alt="copy" />
-            <span>Copy</span>
-          </button>
-          <button
-            class="flex w-1/2 items-center justify-center space-x-1 bg-green-500 text-white px-3 py-1 md:px-4 md:py-2 font-semibold rounded-md"
-          >
-            <img class="text-white" src="./assets/call.png" alt="call" />
-            <span>Call</span>
-          </button>
-        </div>
-      </div>
-      <!-- card 9 -->
-      <div
-        class="bg-white w-full h-fit rounded-lg shadow py-4 px-6 flex flex-col gap-3 items-center"
-      >
-        <!-- first part -->
-        <div class="w-full flex justify-between items-center">
-          <div class="flex justify-center items-center bg-[#FFE3E2] p-2 rounded-md">
-            <img class="h-10 w-10" src="./assets/emergency.png" alt="Part 1">
-          </div>
-          <div>
-            <div class="flex justify-center items-center p-1 rounded-md">
-            <p class="text-3xl cursor-pointer"><i class="fa-regular fa-heart"></i></p>
-          </div>
-          </div>
-        </div>
-        <!-- second part -->
-        <div class="w-full flex flex-col items-start mt-2">
-          <div class="flex flex-col">
-            <h1 class="text-2xl font-semibold">National Emergency Number</h1>
-            <p class="text-gray-600 font-semibold">National Emergency</p>
-          </div>
-          <div class="flex flex-col mt-4 mb-2 gap-1">
-            <p class="text-4xl font-bold">999</p>
-            <p class="text-gray-500 font-medium text-center">All</p>
-          </div>
-        </div>
-        <!-- third part -->
-        <div class="flex w-full space-x-2">
-          <button
-            class="flex w-1/2 items-center justify-center space-x-1 border border-gray-300 px-3 py-1 md:px-4 md:py-2 font-semibold rounded-md"
-          >
-            <img src="./assets/copy.png" alt="copy" />
-            <span>Copy</span>
-          </button>
-          <button
-            class="flex w-1/2 items-center justify-center space-x-1 bg-green-500 text-white px-3 py-1 md:px-4 md:py-2 font-semibold rounded-md"
-          >
-            <img class="text-white" src="./assets/call.png" alt="call" />
-            <span>Call</span>
-          </button>
-        </div>
-      </div>
-      </div>
-      <!-- Part 4 -->
-      <div class="bg-white grid grid-cols-1 w-full md:w-1/4 h-fit rounded-lg shadow p-4 flex flex-col items-center">
-        <h2 class="font-bold mb-2">Part 4</h2>
-        <div>adfasdf</div>
-        <h2 class="font-bold mb-2">Part 4</h2>
-        <div>adfasdf</div>
-        <h2 class="font-bold mb-2">Part 4</h2>
-        <div>adfasdf</div>
-        <h2 class="font-bold mb-2">Part 4</h2>
-        <div>adfasdf</div>
-        <h2 class="font-bold mb-2">Part 4</h2>
-        <div>adfasdf</div>
-        <h2 class="font-bold mb-2">Part 4</h2>
-        <div>adfasdf</div>
       </div>
     </section>
   </body>
