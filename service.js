@@ -69,6 +69,7 @@ cards.forEach((card) => {
     navigator.clipboard.writeText(number);
 
     copy++;
+    alert(`Number ${number} copied to clipboard!`);
     updateCopyDisplay();
     console.log("Number copied:", number);
   });
