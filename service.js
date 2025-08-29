@@ -42,11 +42,13 @@ function renderHistory() {
     );
 
     div.innerHTML = `
+      <div  class="bg-gray-100 flex w-full rounded-md justify-between px-6 py-2">
       <div>
         <strong>${item.title}</strong><br>
         <span class="text-gray-600">${item.number}</span>
       </div>
       <p class="text-gray-800 text-[16px]">${item.date}</p>
+      </div>
     `;
     historyList.appendChild(div);
   });
@@ -74,6 +76,8 @@ cards.forEach((card) => {
   callBtn.addEventListener("click", () => {
     const number = card.querySelector(".number").innerText;
     const title = card.querySelector(".title").innerText;
+
+    alert(`Calling ${title} ${number}...`);
 
     coins -= 20;
     if (coins < 0) {
