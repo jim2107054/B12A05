@@ -77,14 +77,13 @@ cards.forEach((card) => {
     const number = card.querySelector(".number").innerText;
     const title = card.querySelector(".title").innerText;
 
-    alert(`Calling ${title} ${number}...`);
-
     coins -= 20;
     if (coins < 0) {
       coins = 0;
-      alert("Not enough coins!");
+      alert("Not enough coins! Minimum 20 coins required.");
       return;
     } else {
+      alert(`Calling ${title} ${number}...`);
       updateCopyDisplay();
     }
 
