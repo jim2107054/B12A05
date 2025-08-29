@@ -18,7 +18,11 @@ showCopy.innerText = copy;
 
 function updateCopyDisplay() {
   showLove.innerText = love;
-  showCoins.innerText = coins;
+  if (coins < 0) {
+    showCoins.innerText = 0;
+  } else {
+    showCoins.innerText = coins;
+  }
   showCopy.innerText = copy;
 }
 
