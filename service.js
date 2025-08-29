@@ -1,32 +1,62 @@
-const cards = document.querySelectorAll('.card');
+const cards = document.querySelectorAll(".card");
 
 const outputDate = document.getElementById("output-date");
 const outputTitle = document.getElementById("output-title");
 const outputNumber = document.getElementById("output-number");
 
-cards.forEach(card=> {
-    const copyBtn = card.querySelector('.copy-btn');
-    const callBtn = card.querySelector('.call-btn');
+const showLove = document.getElementById("show-love");
+const showCoins = document.getElementById("show-coins");
+const showCopy = document.getElementById("show-copy");
 
-    copyBtn.addEventListener("click", ()=>{
-        const number = card.querySelector(".number").innerText;
-        navigator.clipboard.writeText(number);
+let love = 0;
+let coins = 100;
+let copy = 0;
 
-        console.log("number copied:", number);
-    })
+showLove.innerText = love;
+showCoins.innerText = coins;
+showCopy.innerText = copy;
 
-    callBtn.addEventListener("click", ()=> {
-        const number = card.querySelector(".number").innerText;
-        const title = card.querySelector(".title").innerText;
+function updateCopyDisplay() {
+  showLove.innerText = love;
+  showCoins.innerText = coins;
+  showCopy.innerText = copy;
+}
 
-        const date = new Date();
-        const localTime = date.toLocaleString();
-        const time = date.toLocaleTimeString();
+cards.forEach((card) => {
+  const copyBtn = card.querySelector(".copy-btn");
+  const callBtn = card.querySelector(".call-btn");
 
-        console.log(number, title, localTime);
+  
 
-        outputDate.innerText = time;
-        outputTitle.innerText = title;
-        outputNumber.innerText = number;
-    })
-})
+  copyBtn.addEventListener("click", () => {
+    const number = card.querySelector(".number").innerText;
+    navigator.clipboard.writeText(number);
+
+    copy++;
+    updateCopyDisplay();
+    console.log("number copied:", number);
+  });
+
+  callBtn.addEventListener("click", () => {
+    const number = card.querySelector(".number").innerText;
+    const title = card.querySelector(".title").innerText;
+
+    coins -= 20;
+
+    if (coins < 0) {
+      alert("Not enough coins");
+    } else {
+      updateCopyDisplay();
+    }
+
+    const date = new Date();
+    const localTime = date.toLocaleString();
+    const time = date.toLocaleTimeString();
+
+    console.log(number, title, localTime);
+
+    outputDate.innerText = time;
+    outputTitle.innerText = title;
+    outputNumber.innerText = number;
+  });
+});
