@@ -26,15 +26,41 @@ function updateCopyDisplay() {
   showCopy.innerText = copy;
 }
 
+const callHistory = [];
+const historyList = document.getElementById("historyList");
+
+function renderHistory() {
+  historyList.innerHTML = "";
+  callHistory.forEach((item, index) => {
+    const div = document.createElement("div");
+    div.classList.add(
+      "history-item",
+      "flex",
+      "justify-between",
+      "items-center",
+      "pb-2"
+    );
+
+    div.innerHTML = `
+      <div>
+        <strong>${item.title}</strong><br>
+        <span class="text-gray-600">${item.number}</span>
+      </div>
+      <p class="text-gray-800 text-[16px]">${item.date}</p>
+    `;
+    historyList.appendChild(div);
+  });
+}
+
 cards.forEach((card) => {
   const copyBtn = card.querySelector(".copy-btn");
   const callBtn = card.querySelector(".call-btn");
-  const ShowLove = card.querySelector(".love-count")
+  const ShowLove = card.querySelector(".love-count");
 
   ShowLove.addEventListener("click", () => {
     love++;
     updateCopyDisplay();
-  })
+  });
 
   copyBtn.addEventListener("click", () => {
     const number = card.querySelector(".number").innerText;
@@ -42,7 +68,7 @@ cards.forEach((card) => {
 
     copy++;
     updateCopyDisplay();
-    console.log("number copied:", number);
+    console.log("Number copied:", number);
   });
 
   callBtn.addEventListener("click", () => {
@@ -50,21 +76,25 @@ cards.forEach((card) => {
     const title = card.querySelector(".title").innerText;
 
     coins -= 20;
-
     if (coins < 0) {
-      alert("Not enough coins");
+      coins = 0;
+      alert("Not enough coins!");
+      return;
     } else {
       updateCopyDisplay();
     }
 
     const date = new Date();
-    const localTime = date.toLocaleString();
-    const time = date.toLocaleTimeString();
+    const localTime = date.toLocaleTimeString();
 
-    console.log(number, title, localTime);
+    callHistory.push({ title, number, date: localTime });
 
-    outputDate.innerText = time;
-    outputTitle.innerText = title;
-    outputNumber.innerText = number;
+    renderHistory();
   });
+});
+
+const clearBtn = document.querySelector(".clear-btn");
+clearBtn.addEventListener("click", () => {
+  callHistory.length = 0;
+  renderHistory();
 });
