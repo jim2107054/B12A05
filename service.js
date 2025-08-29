@@ -29,8 +29,12 @@ function updateCopyDisplay() {
 cards.forEach((card) => {
   const copyBtn = card.querySelector(".copy-btn");
   const callBtn = card.querySelector(".call-btn");
+  const ShowLove = card.querySelector(".love-count")
 
-  
+  ShowLove.addEventListener("click", () => {
+    love++;
+    updateCopyDisplay();
+  })
 
   copyBtn.addEventListener("click", () => {
     const number = card.querySelector(".number").innerText;
